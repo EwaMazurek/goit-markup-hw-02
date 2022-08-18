@@ -19,13 +19,14 @@ body {
   --footer-links-inactive: rgba(255, 255, 255, 0.6);
   --btn-inactive: #f5f4fa;
   --btn-inactive-txt: #212121;
-  --border-color: #ececec;
+  --border-color-header: #ececec;
+  --border-color-portoflio: #eeeeee;
 }
 
 /* header */
 .header-style {
   border-radius: 1px;
-  border-color: var(--border-color);
+  border-color: var(--border-color-header);
   border-style: solid;
 }
 
@@ -108,7 +109,7 @@ body {
   color: var(--btn-inactive-txt);
   background-color: var(--btn-inactive);
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
   border-radius: 4px;
 }
 
@@ -116,6 +117,7 @@ body {
 .button-inactive:focus {
   color: var(--btn-inactive);
   background-color: var(--element-focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .main-list > li {
@@ -236,4 +238,66 @@ body {
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--element-focus);
+}
+
+/* portfolio.html */
+
+/* przyciski */
+.buttons-list {
+  list-style: none;
+}
+
+.button-li {
+  display: inline-block;
+}
+
+.portfolio-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-style: none;
+  border-radius: 4px;
+
+  color: var(--btn-inactive-txt);
+  background-color: var(--btn-inactive);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--btn-inactive);
+  background-color: var(--element-focus);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* zdjecia */
+
+.portfolio-projects {
+  list-style: none;
+}
+
+.portfolio-projects-li {
+  display: inline-block;
+  border: 1px solid var(--border-color-portoflio);
+}
+
+.project-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+
+.project-category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
 }
