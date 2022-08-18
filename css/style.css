@@ -19,9 +19,16 @@ body {
   --footer-links-inactive: rgba(255, 255, 255, 0.6);
   --btn-inactive: #f5f4fa;
   --btn-inactive-txt: #212121;
+  --border-color: #ececec;
 }
 
 /* header */
+.header-style {
+  border-radius: 1px;
+  border-color: var(--border-color);
+  border-style: solid;
+}
+
 .nav-bar {
   display: inline-block;
 }
