@@ -118,6 +118,7 @@ body {
   color: var(--btn-inactive);
   background-color: var(--element-focus);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .main-list > li {
